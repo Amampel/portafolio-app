@@ -1,4 +1,9 @@
-body {
+#root{
+  background-color: #171717;
+  color: #c9c9c9;
+}
+body {  
+  overflow: hidden;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +15,160 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.layout{
+  height: 100vh;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.header{
+  display: flex;
+  height: 132px;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px solid #c9c9c9;
+  margin-bottom: 35px;
+}
+
+.header .logo{
+  flex-grow: 2;
+  display: flex;
+}
+.works{
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  justify-content: center; 
+  margin-bottom: -30px;
+}
+.works__detail{
+  width: 300px;
+  height: 150px;
+  border: 1px solid black;
+  border-radius: 8px;
+  background: white;
+}
+.works__detail:hover{
+  border-color: transparent;
+ cursor: pointer;
+ transition: all 400ms;
+ transform: scale(1.05,1.05);
+}
+.frame{
+  overflow: hidden;
+}
+.header .logo h3{
+  display: block;
+  flex-basis: 40px;
+  margin-left: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-left: 5px;
+}
+
+.header .logo span{
+ display: block;
+ font-size: 64px;
+ font-weight: bolder;
+ color: #fa4529;
+}
+
+.header nav{
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.header nav ul{
+  height: 132px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.header li{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 17px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.header li a{
+  color: #c9c9c9;
+  text-decoration: none;
+  transition: all 300ms;
+}
+
+.header a:hover{
+  color: #fa4529;
+}
+
+.header .active{
+  color: #fa4529;
+
+}
+
+.content{
+  min-height: 500px;
+}
+
+.footer{
+  text-align: center;
+  font-size: 14px;
+  border-top: 3px solid #c9c9c9;
+  background: #171717;
+  min-height: 100px;
+  line-height: 150px;
+  color: #444;
+  margin-top: 80px;
+}
+.home{
+  margin-top: -60px;
+}
+.home h1{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-weight: 200;
+  font-size: 50px;
+  margin-bottom: 0px;
+  margin-top: 80px;
+}
+
+.home strong{
+  color: #fa4529;
+}
+
+.home h2{
+  color: #fa4529;
+  opacity: 0.8;
+  font-weight: lighter ;
+  text-align: center;
+}
+
+.home a{
+  padding: 7px;
+  border-radius: 5px;
+  color: #c9c9c9;
+  background-color: #fa4529;
+  text-decoration: none;
+  transition: all 300ms;
+}
+
+.home a:hover{
+  background-color: #c9c9c9;
+  color: black;
+}
+
+.home .heading{
+  font-size: 40px;
+  font-weight: 400;
+  color: #c9c9c9;
+  margin-bottom: 0px;
+}
+
+.home p{
+  color: rgb(92, 92, 92);;
 }
